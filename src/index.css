@@ -169,7 +169,6 @@ progress {
 }
 
 .answer {
-  
   transform: translateX(2rem);
 }
 
@@ -211,6 +210,15 @@ progress {
   font-size: 1.8rem;
   color: var(--color-medium);
   border: 2px solid var(--color-dark);
+  padding: 1.35rem 2.8rem;
+  border-radius: 100px;
+}
+.warning {
+  float: left;
+  font-size: 1.8rem;
+  color: var(--color-medium);
+  border: 2px solid var(--color-dark);
+  background-color: #ff4d4f;
   padding: 1.35rem 2.8rem;
   border-radius: 100px;
 }
