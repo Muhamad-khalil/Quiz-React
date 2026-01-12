@@ -83,7 +83,7 @@ export default function App() {
   const maxPoints = questions.reduce((prev, curr) => prev + curr.points, 0);
 
   useEffect(function () {
-    fetch("http://localhost:9000/questionsss")
+    fetch("https://6965352fe8ce952ce1f483ab.mockapi.io/questions")
       .then((res) => res.json())
       .then((data) =>
         dispatch({
