@@ -1,7 +1,12 @@
+import { useQuiz } from "../context/QuestionContext";
 import Options from "./Option";
 
-function Question({ question, dispatch, answer }) {
-  console.log(question);
+function Question() {
+  const { questions, index, dispatch, answer } = useQuiz();
+
+  const question = questions[index];
+
+  if (!question) return <p>Loading question...</p>;
 
   return (
     <div>
